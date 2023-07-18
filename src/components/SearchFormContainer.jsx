@@ -22,7 +22,7 @@ const SearchFormContainer = () => {
   } = useSelector((store) => store.allJobs);
 
   const handleChange = (e) => {
-    handleSearchValue({ name: e.target.name, value: e.target.value });
+    dispatch(handleSearchValue({ name: e.target.name, value: e.target.value }));
   };
   const handleSubmit = (e) => {
     e.preventDefault();
